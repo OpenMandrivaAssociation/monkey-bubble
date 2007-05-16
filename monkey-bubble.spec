@@ -7,7 +7,8 @@ Name: %{name}
 Version: %{version}
 Release: %{release}
 Source0: http://home.gna.org/monkeybubble/downloads/%{name}-%{version}.tar.bz2
-Patch3: monkey-bubble-0.3.22-no-werror.patch.bz2
+Patch: monkey-bubble-0.4.0-help.patch
+Patch3: monkey-bubble-0.3.22-no-werror.patch
 License: GPL
 Group: Games/Arcade
 Url: http://home.gna.org/monkeybubble/
@@ -39,11 +40,12 @@ Support for network game with 4 players is included.
 
 %prep
 %setup -q
+%patch -p1
 %patch3 -p1
 autoconf
 
 %build
-%configure2_5x
+%configure2_5x --disable-scrollkeeper
 %make
 
 %install
