@@ -19,6 +19,7 @@ BuildRequires: libglade2.0-devel
 BuildRequires: libgstreamer-plugins-base-devel
 BuildRequires: librsvg-devel
 BuildRequires: scrollkeeper
+BuildRequires: gnome-doc-utils
 BuildRequires: perl-XML-Parser
 BuildRequires: ImageMagick
 BuildRequires: desktop-file-utils
