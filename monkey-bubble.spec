@@ -12,6 +12,7 @@ Patch3: monkey-bubble-0.3.22-no-werror.patch
 License: GPL
 Group: Games/Arcade
 Url: http://home.gna.org/monkeybubble/
+BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 Requires: gstreamer0.10-plugins-good
 BuildRequires: libgnomeui2-devel
 BuildRequires: libglade2.0-devel
