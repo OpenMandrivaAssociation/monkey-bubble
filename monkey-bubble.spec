@@ -56,12 +56,6 @@ rm -rf $RPM_BUILD_ROOT
 for omf in %buildroot%_datadir/omf/%name/%name-??*.omf;do 
 echo "%lang($(basename $omf|sed -e s/%name-// -e s/.omf//)) $(echo $omf|sed -e s!%buildroot!!)" >> %name.lang
 done
-mkdir -p $RPM_BUILD_ROOT/%{_menudir}
-cat << EOF > $RPM_BUILD_ROOT/%{_menudir}/%{name}
-?package(%{name}):command="%name" icon="%{name}.png" \
-  needs="X11" section="More Applications/Games/Arcade" title="Monkey Bubble" \
-  longtitle="Monkey Bubble Arcade Game" startup_notify="true" xdg="true"
-EOF
 desktop-file-install --vendor="" \
   --remove-category="Application" \
   --add-category="GTK" \
@@ -108,4 +102,3 @@ rm -rf $RPM_BUILD_ROOT
 %_datadir/omf/%name/%name-C.omf
 %_iconsdir/%name.png
 %_miconsdir/%name.png
-%_menudir/%name
