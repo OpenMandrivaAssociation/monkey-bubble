@@ -69,8 +69,7 @@ ln -s %_datadir/pixmaps/%name-icon.png %buildroot%_iconsdir/%name.png
 convert -scale 16x16 pixmaps/%name-icon.png %buildroot%_miconsdir/%name.png
 
 %triggerpostun -- %{name} < 0.3.2-3mdk
-export GCONF_CONFIG_SOURCE=`gconftool-2 --get-default-source`
-gconftool-2 --makefile-install-rule %{_sysconfdir}/gconf/schemas/%name.schemas > /dev/null
+%post_install_gconf_schemas %name
 
 
 %post
