@@ -72,17 +72,21 @@ convert -scale 16x16 pixmaps/%name-icon.png %buildroot%_miconsdir/%name.png
 %post_install_gconf_schemas %name
 
 
+%if %mdkversion < 200900
 %post
 %update_menus
 %update_scrollkeeper
 %post_install_gconf_schemas %name
+%endif
 
 %preun
 %preun_uninstall_gconf_schemas %name 
 
+%if %mdkversion < 200900
 %postun
 %clean_menus
 %clean_scrollkeeper
+%endif
 
 %clean
 rm -rf $RPM_BUILD_ROOT
