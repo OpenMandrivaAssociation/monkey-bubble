@@ -21,7 +21,7 @@ BuildRequires: librsvg-devel
 BuildRequires: scrollkeeper
 BuildRequires: gnome-doc-utils
 BuildRequires: perl-XML-Parser
-BuildRequires: ImageMagick
+BuildRequires: imagemagick
 BuildRequires: desktop-file-utils
 #gw auto*
 BuildRequires: automake1.4
