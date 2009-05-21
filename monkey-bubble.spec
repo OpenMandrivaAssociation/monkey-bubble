@@ -1,6 +1,6 @@
 %define name monkey-bubble
 %define version 0.4.0
-%define release %mkrel 2
+%define release %mkrel 3
 
 Summary: GNOME clone of the game Bust'a'Move
 Name: %{name}
@@ -8,8 +8,9 @@ Version: %{version}
 Release: %{release}
 Source0: http://home.gna.org/monkeybubble/downloads/%{name}-%{version}.tar.bz2
 Patch: monkey-bubble-0.4.0-help.patch
+Patch1: monkey-bubble-0.4.0-format-strings.patch
 Patch3: monkey-bubble-0.3.22-no-werror.patch
-License: GPL
+License: LGPLv2+
 Group: Games/Arcade
 Url: http://home.gna.org/monkeybubble/
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
@@ -42,12 +43,13 @@ Support for network game with 4 players is included.
 %prep
 %setup -q
 %patch -p1
+%patch1 -p1
 %patch3 -p1
 autoconf
 
 %build
 %configure2_5x --disable-scrollkeeper
-%make
+%make LIBS=-lrsvg-2
 
 %install
 rm -rf $RPM_BUILD_ROOT
