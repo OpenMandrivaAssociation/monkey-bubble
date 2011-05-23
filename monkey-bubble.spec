@@ -7,8 +7,9 @@ Name: %{name}
 Version: %{version}
 Release: %{release}
 Source0: http://home.gna.org/monkeybubble/downloads/%{name}-%{version}.tar.bz2
-Patch: monkey-bubble-0.4.0-help.patch
+Patch0: monkey-bubble-0.4.0-help.patch
 Patch1: monkey-bubble-0.4.0-format-strings.patch
+Patch2: monkey-bubble-0.4.0-link.patch
 Patch3: monkey-bubble-0.3.22-no-werror.patch
 License: LGPLv2+
 Group: Games/Arcade
@@ -42,14 +43,15 @@ Support for network game with 4 players is included.
 
 %prep
 %setup -q
-%patch -p1
+%patch0 -p1
 %patch1 -p1
-%patch3 -p1
-autoconf
+%patch2 -p0
+sed -i -e 's/-Werror//' src/*/Makefile.*
 
 %build
+autoreconf -fi
 %configure2_5x --disable-scrollkeeper
-%make LIBS=-lrsvg-2
+%make
 
 %install
 rm -rf $RPM_BUILD_ROOT
