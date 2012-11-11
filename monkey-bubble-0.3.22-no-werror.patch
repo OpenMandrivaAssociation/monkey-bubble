@@ -1,0 +1,22 @@
+--- monkey-bubble-0.3.2/src/net/Makefile.am~	2004-06-29 08:53:44.000000000 +0200
++++ monkey-bubble-0.3.2/src/net/Makefile.am	2005-06-06 11:02:31.453466110 +0200
+@@ -7,7 +7,7 @@
+ 	-I$(top_srcdir)/src/view \
+ 	-I$(top_srcdir)/src/ui \
+ 	-I$(top_srcdir)/src/util \
+-	-g -O2 -Wall -Werror -D_REENTRANT  -D_DEBUG_ -D_TIME_DEBUG_ \
++	-g -O2 -Wall -D_REENTRANT  -D_DEBUG_ -D_TIME_DEBUG_ \
+ 	$(NULL)
+ # -g -O2 -Wall -Wstrict-prototypes -Wmissing-prototypes -Werror -D_REENTRANT  -D_TIME_DEBUG_ -D_DEBUG_
+ 
+--- monkey-bubble-0.3.2/src/ui/Makefile.am~	2004-06-29 08:53:46.000000000 +0200
++++ monkey-bubble-0.3.2/src/ui/Makefile.am	2005-06-06 11:11:13.848736023 +0200
+@@ -13,7 +13,7 @@
+ 	-I$(top_srcdir)/src/util			\
+ 	-I$(top_srcdir)/src/net 			\
+ 	-I$(top_srcdir)/src/input                       \
+-	-Wall -Werror
++	-Wall
+ 
+ 
+ bin_PROGRAMS = monkey-bubble

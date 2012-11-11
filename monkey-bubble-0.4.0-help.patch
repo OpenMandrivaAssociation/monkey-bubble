@@ -1,0 +1,74 @@
+--- monkey-bubble-0.4.0/help/C/monkey-bubble.xml.help	2007-04-27 14:25:41.000000000 +0200
++++ monkey-bubble-0.4.0/help/C/monkey-bubble.xml	2007-04-27 14:26:16.000000000 +0200
+@@ -23,7 +23,7 @@
+       <publishername>GNOME Documentation Project</publishername> 
+     </publisher> 
+     <authorgroup> 
+-      <author> 
++      <author role="maintainer"> 
+ 	<firstname>Thomas</firstname> 
+ 	<surname>Cataldo</surname> 
+ 	<affiliation> 
+@@ -55,6 +55,10 @@
+ 	manual, follow the directions in the 
+ 	<ulink url="ghelp:gnome-feedback" type="help">GNOME Feedback Page</ulink>. </para>
+     </legalnotice> 
++    
++    <abstract role="description">
++      <para> &app; Manual V&manrevision; </para>
++    </abstract>
+   </articleinfo> 
+ 
+   <indexterm> 
+--- monkey-bubble-0.4.0/help/fr/fr.po.help	2007-04-27 14:25:51.000000000 +0200
++++ monkey-bubble-0.4.0/help/fr/fr.po	2007-04-27 14:26:21.000000000 +0200
+@@ -35,7 +35,7 @@
+ 
+ #: help/C/monkey-bubble.xml:50(releaseinfo) 
+ msgid "This manual describes version 0.1.7 of Monkey Bubble."
+-msgstr "Ce manuel d&eacute;crit la version 0.1.7 de Monkey Bubble."
++msgstr "Ce manuel décrit la version 0.1.7 de Monkey Bubble."
+ 
+ #: help/C/monkey-bubble.xml:53(title) 
+ msgid "Feedback"
+@@ -43,7 +43,7 @@
+ 
+ #: help/C/monkey-bubble.xml:54(para) 
+ msgid "To report a bug or make a suggestion regarding the Monkey Bubble application or this manual, follow the directions in the <ulink url=\"ghelp:gnome-feedback\" type=\"help\">GNOME Feedback Page</ulink>."
+-msgstr "Pour signaler un probl&egrave;me ou faire une suggestion concernant l'application Monkey Bubble ou le pr&eacute;sent manuel, proc&eacute;dez comme indiqu&eacute;&agrave; la <ulink url=\"ghelp:gnome-feedback\" type=\"help\">GNOME Feedback Page</ulink>."
++msgstr "Pour signaler un problème ou faire une suggestion concernant l'application Monkey Bubble ou le présent manuel, procédez comme indiquéà la <ulink url=\"ghelp:gnome-feedback\" type=\"help\">GNOME Feedback Page</ulink>."
+ 
+ #: help/C/monkey-bubble.xml:64(primary) 
+ msgid "bubble game"
+@@ -67,7 +67,7 @@
+ 
+ #: help/C/monkey-bubble.xml:81(para) 
+ msgid "Once 3 or more bubbles of the color are sticked together at the top of the playground, they will explode."
+-msgstr "Lorsque 3 (ou plus) bulles de la même couleur sont accroch&eacute;s en haut de l'aire de jeu, elles explosent."
++msgstr "Lorsque 3 (ou plus) bulles de la même couleur sont accrochés en haut de l'aire de jeu, elles explosent."
+ 
+ #: help/C/monkey-bubble.xml:85(para) 
+ msgid "To level up, you need to clear all the bubbles stuck in the playground."
+@@ -83,11 +83,11 @@
+ 
+ #: help/C/monkey-bubble.xml:100(title) 
+ msgid "To Start Monkey Bubble"
+-msgstr "D&eacute;marrage de Monkey Bubble"
++msgstr "Démarrage de Monkey Bubble"
+ 
+ #: help/C/monkey-bubble.xml:101(para) 
+ msgid "You can start <application>Monkey Bubble</application> in the following ways:"
+-msgstr "Vous pouvez d&eacute;marrer <application>Monkey Bubble</application> en recourant &agrave; l'une des m&eacute;thodes suivantes :"
++msgstr "Vous pouvez démarrer <application>Monkey Bubble</application> en recourant à l'une des méthodes suivantes :"
+ 
+ #: help/C/monkey-bubble.xml:106(term) 
+ msgid "Applications menu"
+@@ -95,7 +95,7 @@
+ 
+ #: help/C/monkey-bubble.xml:108(para) 
+ msgid "Choose <menuchoice><guimenu>Games</guimenu><guimenuitem>Monkey Bubble</guimenuitem></menuchoice>."
+-msgstr "S&eacute;lectionnez <menuchoice><guimenu>Jeux</guimenu><guimenuitem>Monkey Bubble</guimenuitem></menuchoice>."
++msgstr "Sélectionnez <menuchoice><guimenu>Jeux</guimenu><guimenuitem>Monkey Bubble</guimenuitem></menuchoice>."
+ 
+ #: help/C/monkey-bubble.xml:117(term) 
+ msgid "Command line"

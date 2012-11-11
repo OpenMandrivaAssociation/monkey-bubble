@@ -1,0 +1,15 @@
+--- src/ui/Makefile.am.link	2011-05-23 17:30:48.000000000 +0200
++++ src/ui/Makefile.am	2011-05-23 17:31:15.000000000 +0200
+@@ -40,10 +40,10 @@
+ 
+ 
+ monkey_bubble_LDADD =  \
+-	$(UI_LIBS) \
+ 	../monkey/libmonkey.a \
+ 	../view/libmonkeyview.a \
+ 	../util/libmonkeyutil.a \
+ 	../net/libmonkeynet.a \
+ 	../audio/libmonkeyaudio.a \
+-	../input/libmbinput.a
++	../input/libmbinput.a \
++	$(UI_LIBS)
