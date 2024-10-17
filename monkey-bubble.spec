@@ -13,7 +13,7 @@ Patch2: monkey-bubble-0.4.0-link.patch
 Patch3: monkey-bubble-0.3.22-no-werror.patch
 License: LGPLv2+
 Group: Games/Arcade
-Url: http://home.gna.org/monkeybubble/
+Url: https://home.gna.org/monkeybubble/
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 Requires: gstreamer0.10-plugins-good
 BuildRequires: libgnomeui2-devel
