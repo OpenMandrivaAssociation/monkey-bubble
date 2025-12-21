@@ -16,6 +16,9 @@ Group: Games/Arcade
 Url: https://home.gna.org/monkeybubble/
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 Requires: gstreamer0.10-plugins-good
+BuildRequires:	autoconf
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
 BuildRequires: libgnomeui2-devel
 BuildRequires: libglade2.0-devel
 BuildRequires: libgstreamer-plugins-base-devel
