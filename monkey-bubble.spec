@@ -1,6 +1,6 @@
 %define name monkey-bubble
 %define version 0.4.0
-%define release %mkrel 4
+%define release 5
 
 Summary: GNOME clone of the game Bust'a'Move
 Name: %{name}
